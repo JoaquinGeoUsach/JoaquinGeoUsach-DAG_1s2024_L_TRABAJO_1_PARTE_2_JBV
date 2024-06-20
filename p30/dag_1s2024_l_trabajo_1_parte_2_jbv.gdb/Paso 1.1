@@ -1,0 +1,38 @@
+﻿import arcpy
+
+
+def script_tool(fcIn, dirOut, zone_field, raster_value, outName):
+    """Script code goes below"""
+
+    return
+
+
+if __name__ == "__main__":
+
+    fcIn = arcpy.GetParameterAsText(0)
+    dirOut = arcpy.GetParameterAsText(1)
+    zone_field = arcpy.GetParameterAsText(2)
+    raster_value = arcpy.GetParameterAsText(3)
+    outName = arcpy.GetParameterAsText(4)
+
+    script_tool(fcIn, dirOut, zone_field, raster_value, outName)
+    arcpy.SetParameterAsText(4, "Result")
+
+#-------------------------------------------------------
+#Ordenar ALTURAS PROMEDIO DEL DEM A TABLAS POR MANZANAS
+fcOut = f"{dirOut}\{outName}"
+#Entorno
+#Definir entorno
+aprx = arcpy.mp.ArcGISProject("CURRENT")
+
+#Contenidos activos en el proyecto
+aprxMap = aprx.listMaps()[0]
+aprxMap.addDataFromPath(fcIn)
+aprxMap.addDataFromPath(raster_value)
+content = []
+n = len(aprxMap.listLayers())
+for i in list(range(0,n)):
+    content.append(aprxMap.listLayers()[i].name)
+
+arcpy.ia.ZonalStatisticsAsTable(fcIn, zone_field, raster_value, fcOut, statistics_type="MEAN")
+

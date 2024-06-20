@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: miércoles, 19 de junio de 2024 21:35:44</msg><msg code="0" type="0">Empieza el geoproceso</msg><msg code="-2147467259" type="100">  File "&lt;expression&gt;", line 1
+    UPDATE MiTabla SET MiColumna = 0.01 WHERE MiColumna = 0;
+           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "C:\Users\juaco\OneDrive\Documentos\ArcGIS\Packages\DAG_1s2024_L_TRABAJO_1_PARTE_2_JBV_d59d9f\p30\dag_1s2024_l_trabajo_1_parte_2_jbv.gdb\reemplazo.py", line 29, in &lt;module&gt;
+    arcpy.management.CalculateField(fcIn8, field="DIST_VM", expression="UPDATE MiTabla SET MiColumna = 0.01 WHERE MiColumna = 0;")
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\management.py", line 6187, in CalculateField
+    raise e
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\management.py", line 6184, in CalculateField
+    retval = convertArcObjectToPythonObject(gp.CalculateField_management(*gp_fixargs((in_table, field, expression, expression_type, code_block, field_type, enforce_domains), True)))
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\geoprocessing\_base.py", line 512, in &lt;lambda&gt;
+    return lambda *args: val(*gp_fixargs(args, True))
+arcgisscripting.ExecuteError: ERROR 000539:   File "&lt;expression&gt;", line 1
+    UPDATE MiTabla SET MiColumna = 0.01 WHERE MiColumna = 0;
+           ^
+SyntaxError: invalid syntax
+
+Failed to execute (CalculateField).
+
+</msg><msg code="0" type="0">Failed script 5.2.- CALCULATE FIELD TRANSFORMAR VALORES...</msg><msg code="-2147467259" type="100">Failed to execute (reemplazo0).</msg><msg code="0" type="3">Failed at miércoles, 19 de junio de 2024 21:35:46 (Elapsed Time: 1.94 seconds)</msg></messages>

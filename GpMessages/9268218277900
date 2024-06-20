@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: miércoles, 19 de junio de 2024 2:02:36</msg><msg code="0" type="0">Parámetros recibidos - fcIn2: C:\Users\juaco\OneDrive\Documentos\ArcGIS\Packages\DAG_1s2024_L_TRABAJO_1_PARTE_2_JBV_d59d9f\p30\dag_1s2024_l_trabajo_1_parte_2_jbv.gdb\DEMOGRAFÍA_DPA\IND_RIESGO_MANZ_CODE, zone_field: MANZENT_I, outName: C:\Users\juaco\OneDrive\Documentos\ArcGIS\Packages\DAG_1s2024_L_TRABAJO_1_PARTE_2_JBV_d59d9f\p30\dag_1s2024_l_trabajo_1_parte_2_jbv.gdb\DEM_MANZANAS_CODE, zone_field1: MANZENT_I</msg><msg code="0" type="0">Iniciando el join...</msg><msg code="0" type="0">Join realizado correctamente entre C:\Users\juaco\OneDrive\Documentos\ArcGIS\Packages\DAG_1s2024_L_TRABAJO_1_PARTE_2_JBV_d59d9f\p30\dag_1s2024_l_trabajo_1_parte_2_jbv.gdb\DEMOGRAFÍA_DPA\IND_RIESGO_MANZ_CODE y C:\Users\juaco\OneDrive\Documentos\ArcGIS\Packages\DAG_1s2024_L_TRABAJO_1_PARTE_2_JBV_d59d9f\p30\dag_1s2024_l_trabajo_1_parte_2_jbv.gdb\DEM_MANZANAS_CODE.</msg><msg code="1" type="100">Error al realizar el join: Object: Error in setting parameter as text</msg><msg code="-2147467259" type="100">Traceback (most recent call last):
+  File "C:\Users\juaco\OneDrive\Documentos\ArcGIS\Packages\DAG_1s2024_L_TRABAJO_1_PARTE_2_JBV_d59d9f\p30\dag_1s2024_l_trabajo_1_parte_2_jbv.gdb\ALTURAS MANZ.py", line 38, in &lt;module&gt;
+    script_tool(fcIn2, zone_field, outName, zone_field1)
+  File "C:\Users\juaco\OneDrive\Documentos\ArcGIS\Packages\DAG_1s2024_L_TRABAJO_1_PARTE_2_JBV_d59d9f\p30\dag_1s2024_l_trabajo_1_parte_2_jbv.gdb\ALTURAS MANZ.py", line 21, in script_tool
+    arcpy.SetParameterAsText(4, fcIn2)
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\__init__.py", line 694, in SetParameterAsText
+    return gp.setParameterAsText(index, text)
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\geoprocessing\_base.py", line 247, in setParameterAsText
+    self._gp.SetParameterAsText(*gp_fixargs(args, True)))
+RuntimeError: Object: Error in setting parameter as text
+</msg><msg code="0" type="0">Failed script 1.2.- Join Manzanas...</msg><msg code="-2147467259" type="100">Failed to execute (JOINMANZ).</msg><msg code="0" type="3">Failed at miércoles, 19 de junio de 2024 2:02:37 (Elapsed Time: 1.18 seconds)</msg></messages>

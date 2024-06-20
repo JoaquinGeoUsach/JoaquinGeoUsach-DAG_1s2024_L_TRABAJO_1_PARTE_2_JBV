@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: viernes, 14 de junio de 2024 17:36:46</msg><msg code="1" type="100">Traceback (most recent call last):
+  File "&lt;string&gt;", line 1400, in execute
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\management.py", line 9469, in JoinField
+    raise e
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\management.py", line 9466, in JoinField
+    retval = convertArcObjectToPythonObject(gp.JoinField_management(*gp_fixargs((in_data, in_field, join_table, join_field, fields, fm_option, field_mapping), True)))
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\geoprocessing\_base.py", line 512, in &lt;lambda&gt;
+    return lambda *args: val(*gp_fixargs(args, True))
+arcgisscripting.ExecuteError: ERROR 000499: table is not editable
+Failed to execute (JoinField).
+
+</msg><msg code="-2147467259" type="100">Failed to execute (JoinAttributesFromPolygon).</msg><msg code="0" type="3">Failed at viernes, 14 de junio de 2024 17:36:49 (Elapsed Time: 2.59 seconds)</msg></messages>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: miércoles, 19 de junio de 2024 17:53:18</msg><msg code="-2147467259" type="100">Traceback (most recent call last):
+  File "C:\Users\juaco\OneDrive\Documentos\ArcGIS\Packages\DAG_1s2024_L_TRABAJO_1_PARTE_2_JBV_d59d9f\p30\dag_1s2024_l_trabajo_1_parte_2_jbv.gdb\paso 3.py", line 27, in &lt;module&gt;
+    aprxMap.addDataFromPath(outName)
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\utils.py", line 191, in fn_
+    return fn(*args, **kw)
+  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\_mp.py", line 2764, in addDataFromPath
+    return convertArcObjectToPythonObject(self._arc_object.addDataFromPath(*gp_fixargs((data_path, web_service_type, custom_parameters,), True)))
+RuntimeError: Failed to add data. Possible credentials issue.
+</msg><msg code="0" type="0">Failed script 3.1.- ESTABLECIMIENTOS POR MANZANA...</msg><msg code="-2147467259" type="100">Failed to execute (ESTPORMANZANA).</msg><msg code="0" type="3">Failed at miércoles, 19 de junio de 2024 17:53:19 (Elapsed Time: 1.08 seconds)</msg></messages>
